@@ -22,9 +22,6 @@ public class PersonList {
 	public void personList(HttpServletRequest req,HttpServletResponse resp){
 		
 		List<Person> list = loginService.selectAll();
-		
-		
-		
 		for(int i=0;i<list.size();i++){
 			System.out.println(list.get(i).getPer_name()+"<--ÕËºÅ&ÃÜÂë-->"+list.get(i).getPer_pass());
 		}
