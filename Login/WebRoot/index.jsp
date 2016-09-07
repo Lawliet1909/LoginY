@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'index.jsp' starting page</title>
+    <title>We R Making The World A Better Place!·UpasswordHub</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -21,7 +21,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my Spring MVC. <br>
-   <a href="/Login/login.jsp">登录</a>
+  	<div align="right">
+    <a href="login.jsp">登录</a> 
+    <a  href="register.jsp">注册</a>
+    </div>
+    <br>
+    <h1 align="center">We are making the world a better place!</h1> 
+    <h2 align="center">;p</h2><br>
   </body>
 </html>

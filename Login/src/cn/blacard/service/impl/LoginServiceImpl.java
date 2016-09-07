@@ -29,9 +29,7 @@ public class LoginServiceImpl implements LoginService{
 		Person per = (Person) personMapper.selectPerson(per_name, per_pass);
 		if(per!=null && per.getPer_pass().equals(per_pass)){
 			System.out.println("³É¹¦£¡");
-			
 			return per;
-			
 		}
 		// TODO Auto-generated method stub
 		return null;
@@ -41,6 +39,13 @@ public class LoginServiceImpl implements LoginService{
 	public List<Person> selectAll() {
 		List<Person> perAll =  personMapper.selectAll();
 		return perAll;
+	}
+
+	public Person addPerson(String per_name, String per_pass) {
+		// TODO Auto-generated method stub
+		Person addPer = (Person)personMapper.addPerson(per_name, per_pass);
+		
+		return addPer;
 	}
 
 }

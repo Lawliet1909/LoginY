@@ -6,12 +6,11 @@
 <mapper namespace="cn.blacard.mapper.PersonMapper">
 
 	<!-- 此处为数据库操作方法，其id对应Mapper类中的方法名 -->
-	<!--	 以下写sql语句
+	<!--	 以下写sql语句 -->
 	<insert id="addPerson" parameterType="Person" >
-	
 		insert into person(per_name,per_pass,per_sex,per_level,per_email,per_phone) values(#{per_name},#{per_pass},#{per_sex},#{per_level},#{per_email},#{per_phone})
 	</insert>
-	 -->
+	
 	<select id="selectPerson"  parameterType="String"  resultType="Person">
 		select * from person where per_name = #{0} and per_pass = #{1}
 	</select>

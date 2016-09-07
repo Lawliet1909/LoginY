@@ -31,7 +31,7 @@ public class LoginController {
 		String per_pass = req.getParameter("per_pass");
 		System.out.println("ÓÃ»§Ãû£º"+per_name+" and ÃÜÂë£º"+per_pass);
 		if(loginService.selectPersonByName(per_name, per_pass)!=null){
-			resp.sendRedirect("/Login/loginSuccess.jsp");
+			resp.sendRedirect("/Login/loginSucceed.jsp");
 //			System.out.println("true");
 		}else{
 //			System.out.println("false");
