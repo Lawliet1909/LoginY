@@ -1,4 +1,5 @@
  <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'loginSuccess.jsp' starting page</title>
+    <title>RegisterSucceed page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,7 +24,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    注册成功！ <br>
-    <a href="login.jsp">立刻登录</a>
+    	注册成功！ <br>
+    <a href="login.jsp">立刻登录</a><br>
+    
+	    您的注册信息如下：<hr>
+	 用户名：${person.per_name}<br>
+	 用户密码：${person.per_pass}
+    
   </body>
 </html>

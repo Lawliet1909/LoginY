@@ -1,6 +1,5 @@
 package cn.blacard.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -41,11 +40,13 @@ public class LoginServiceImpl implements LoginService{
 		return perAll;
 	}
 
+	@Override
 	public Person addPerson(String per_name, String per_pass) {
 		// TODO Auto-generated method stub
-		Person addPer = (Person)personMapper.addPerson(per_name, per_pass);
-		
-		return addPer;
+		Person addPerson = personMapper.addPerson(per_name, per_pass);
+		return addPerson;
 	}
+
+
 
 }

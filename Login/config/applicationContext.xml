@@ -41,6 +41,7 @@
 	</bean>
 	
 	<bean id="loginService" class="cn.blacard.service.impl.LoginServiceImpl"/>
+	<bean id="registerService" class="cn.blacard.service.impl.RegisterServiceImpl"/>
 	<!-- 操作Bean 
 	<bean id="ziYuanSer" class="cn.bla.service.impl.ZiYuanImpl"/>
 	<bean id="personSer" class="cn.bla.service.impl.PersonImpl"/>

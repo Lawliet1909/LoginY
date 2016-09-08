@@ -24,5 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     登录成功！ <br>
+    <a href="/Login/PersonList/lists.bla">查询所有用户及密码</a>
   </body>
 </html>
