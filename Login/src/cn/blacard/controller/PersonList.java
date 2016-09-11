@@ -11,6 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import cn.blacard.entity.Person;
 import cn.blacard.service.LoginService;
+/*
+ * 这是查询所有用户
+ */
 
 @Controller
 @RequestMapping("/PersonList")

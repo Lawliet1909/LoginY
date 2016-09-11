@@ -1,6 +1,8 @@
 package cn.blacard.entity;
 
 public class Person {
+	//定义Person类，给name和pass的属性
+	//这是Person的实体
 	private String per_name;
 	private String per_pass;
 	public String getPer_name() {

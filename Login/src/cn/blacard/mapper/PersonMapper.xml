@@ -7,8 +7,8 @@
 
 	<!-- 此处为数据库操作方法，其id对应Mapper类中的方法名 -->
 	<!--	 以下写sql语句 -->
-	<insert id="addPerson" parameterType="Person" >
-		insert into person(per_name,per_passe) values(#{per_name},#{per_pass})
+	<insert id="addPerson" parameterType="String" >
+		insert into person(per_name,per_pass) values(#{0},#{1})
 	</insert>
 	
 	<select id="selectPerson"  parameterType="String"  resultType="Person">

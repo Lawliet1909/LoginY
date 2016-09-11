@@ -24,12 +24,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+   <jsp:include page="Header.jsp" flush="true"></jsp:include>
+   <script type="text/javascript">
+   	alert("注册成功！");
+   </script>
     	注册成功！ <br>
     <a href="login.jsp">立刻登录</a><br>
     
 	    您的注册信息如下：<hr>
 	 用户名：${person.per_name}<br>
 	 用户密码：${person.per_pass}
+
     
   </body>
 </html>
